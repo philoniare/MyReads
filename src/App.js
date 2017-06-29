@@ -47,11 +47,12 @@ class App extends Component {
         },
     }
     render() {
+        const baseUrl = process.env.PUBLIC_URL;
         const {currentlyReading, wantToRead, read} = this.state.shelves
         return (
             <MuiThemeProvider theme={myReadsTheme}>
                 <div className="App">
-                    <Route exact path="/" render={() => (
+                    <Route exact path={baseUrl + "/"} render={() => (
                         <div>
                             <AppBar color="primary" />
                             <BookShelf
@@ -65,7 +66,7 @@ class App extends Component {
                                 category="read" books={read} />
                         </div>
                     )}/>
-                    <Route path="/search" render={() => (
+                    <Route path={baseUrl + "/search"} render={() => (
                         <BookSearchView onShelfChange={this.fetchAndDisplayShelves} />
                     )}/>
                 </div>

@@ -25,5 +25,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://philoniare.github.io/MyReads"
+  "homepage": "http://philoniare.github.io/MyReads"
 }
