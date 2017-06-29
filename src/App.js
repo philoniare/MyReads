@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import './App.css';
 import {Route} from 'react-router-dom'
-import {MuiThemeProvider} from 'material-ui/styles'
+import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles';
+import {blue, red, green} from 'material-ui/styles/colors';
+import createPalette from 'material-ui/styles/palette';
 import BookShelf from './components/BookShelf'
 import BookSearchView from './components/BookSearchView'
 import AppBar from './components/AppBar'
-import { createMuiTheme } from 'material-ui/styles';
-import {blue, red, green} from 'material-ui/styles/colors';
-
-import createPalette from 'material-ui/styles/palette';
 import * as BooksAPI from './utils/BooksAPI'
+import './App.css';
+
 
 const myReadsTheme = createMuiTheme({
     palette: createPalette({
