@@ -52,7 +52,7 @@ class App extends Component {
     const {currentlyReading, wantToRead, read} = this.state.shelves;
     return (
         <MuiThemeProvider theme={myReadsTheme}>
-          <div className="App">
+          <div className="app">
             <Route exact path={baseUrl + '/'} render={() => (
                 <div>
                   <AppBar color="primary"/>

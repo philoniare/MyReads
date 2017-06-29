@@ -21,8 +21,11 @@ class BookSearchView extends Component {
 
   queryBooks(event) {
     const query = event.target.value;
+    const maxResults = 10;
     if (query) {
-      BooksAPI.search(query, 10).then(books => {
+      console.log(JSON.stringify({query, maxResults}));
+      BooksAPI.search(query, maxResults).then(books => {
+        console.log(books);
         if (books.error) this.setState({books: []});
         else this.setState({books});
       });
