@@ -3,8 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "escape-string-regexp": "^1.0.5",
+    "material-ui": "^1.0.0-alpha.20",
+    "material-ui-icons": "^1.0.0-alpha.19",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "sort-by": "^1.2.0",
+    "typeface-roboto": "0.0.29"
   },
   "devDependencies": {
     "react-scripts": "1.0.8"
